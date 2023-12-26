@@ -4,6 +4,10 @@
     {
       "name": "Install Dependencies",
       "command": "npm install"
+    },
+    {
+      "command": "npm install next-auth@beta",
+      "name": "npm install next-auth@beta"
     }
   ],
 
@@ -12,17 +16,18 @@
     "dev": {
       "name": "dev",
       "command": "npm run dev",
-      "runAtStart": true
+      "runAtStart": true,
+      "preview": {
+        "port": 3000
+      }
     },
     "build": {
       "name": "build",
-      "command": "npm run build",
-      "runAtStart": false
+      "command": "npm run build"
     },
     "start": {
       "name": "start",
-      "command": "npm run start",
-      "runAtStart": false
+      "command": "npm run start"
     }
   }
 }
